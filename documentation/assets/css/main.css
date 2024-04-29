@@ -1,0 +1,102 @@
+h1, h2, h3, h4, h5, h6{
+    font-family: Montserrat;
+    color: #35354a;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+h3{
+    margin-top: 50px;
+}
+
+p{
+    margin-bottom: 20px;
+}
+
+body{
+    font-family: Raleway;
+    line-height: 1.4;
+    font-weight: 500;
+    color: #666;
+    font-size: 14px;
+}
+
+.page-title{
+    margin-top: 100px;
+    font-size: 54px;
+}
+
+#smart-content{
+    max-width: 1200px;
+}
+
+section{
+    margin-top: 100px;
+    margin-bottom: 80px;
+}
+
+.section-header{
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #eee;
+}
+
+ul.structure-list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+}
+
+ul.structure-list > li{
+    list-style: none;
+    padding: 10px 20px;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+    line-height: 1.6;
+}
+
+ul.structure-list > li:nth-child(2n+1){
+    background-color: #f6f6f6;
+}
+
+ul.structure-list > li > .title{
+    color: #29abe2;
+    float: left;
+    width: 320px;
+}
+
+ul.outsource{
+    list-style: none;
+    padding: 0;
+    margin: 0 0 0 20px;
+    font-size: 16px;
+}
+
+ul.outsource > li{
+    list-style: square;
+    padding: 0;
+    margin: 0 0 10px;
+    line-height: 1.6;
+}
+
+ul.outsource > li > .title{
+    display: block;
+    color: #35354a;
+    font-weight: 600;
+}
+
+ul.outsource > li > .title:hover{
+    color: #29abe2;
+    text-decoration: none;
+}
+
+ul.outsource > li > .file{
+    font-size: 13px;
+}
+
+pre,
+img{
+    margin-bottom: 20px;
+}
