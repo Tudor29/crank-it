@@ -2099,9 +2099,6 @@ body.body .text-theme,
 body.body .colorful {
   color: #29abe2;
 }
-body.body .alt-color {
-  color: #35354a;
-}
 body.body .solid-color {
   color: #333;
 }
@@ -2893,11 +2890,9 @@ body.body .text-valid {
 /*------------------------------------------------------------------
     [9. Footer]
 */
-.footer-logo {
-  height: 70px;
-}
+
 .footer-logo img {
-  max-height: 50px;
+  max-height: 100px;
 }
 .footer-title {
   padding: 40px 0 10px;
@@ -3138,8 +3133,8 @@ body.body .text-valid {
     margin-bottom: 80px;
   }
   .solid-section {
-    padding-top: 100px;
-    padding-bottom: 80px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 }
 /* styles for pushed up sections */
@@ -4857,7 +4852,7 @@ body.body .text-valid {
 .paginator span {
   margin: 0 5px;
   display: inline-block;
-  float: left;
+  /* float: left; */
   color: #666;
   padding: 0 10px;
   line-height: 26px;
@@ -5859,7 +5854,7 @@ a.item-label:hover {
 }
 .user-rating .rating-star {
   display: inline-block;
-  float: left;
+  /* float: left; */
   height: auto;
   width: 1.2em;
   line-height: 1.2;
@@ -6258,7 +6253,7 @@ a.item-label:hover {
   clear: both;
 }
 .tabs-lined .tabs-head li {
-  float: left;
+  /* float: left; */
   padding: 0 10px;
   line-height: 46px;
   font-size: 14px;
@@ -6401,7 +6396,7 @@ a.item-label:hover {
 }
 @media (min-width: 768px) {
   .user-dashboard-menu > ul > li {
-    float: left;
+    /* float: left; */
     display: inline-block;
     vertical-align: top;
   }
@@ -7222,3 +7217,12 @@ a.item-label:hover {
     width: 120px;
   }
 }
+
+.footer {
+  background-color: #35354a;
+  color: whitesmoke;
+}
+
+/* body.body .alt-color {
+  color: #35354a;
+} */

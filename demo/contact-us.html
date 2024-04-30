@@ -490,96 +490,102 @@
         <img class="image" src="./assets/images/parts/loader.gif" alt="" />
       </div>
     </div>
-    <footer class="footer alt-bg">
-      <div class="container only-xs-text-justify-center">
-        <div class="solid-section tight">
-          <div class="row cols-md">
-            <div class="sm-col-3">
+    <footer class="footer" style="text-align: center">
+      <div
+        class="container only-xs-text-justify-center"
+        style="text-align: center"
+      >
+        <div class="solid-section">
+          <div
+            class="row cols-md"
+            style="display: flex; justify-content: center"
+          >
+            <div
+              class="sm-col-3"
+              style="
+                flex: 0 1 auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+              "
+            >
               <div class="footer-logo">
-                <img src="http://via.placeholder.com/210x60" alt="ProFix" />
+                <img
+                  src="./assets/images/logo.png"
+                  alt="ProFix"
+                  style="display: block; margin: auto"
+                />
               </div>
-              <div class="footer-text sm-text-justify">
-                Profix is a Premium PSD Template. Best choice for your online
-                store. Let purchase it to enjoy now
-              </div>
+              <div
+                class="footer-text sm-text-justify"
+                style="text-align: center"
+              ></div>
             </div>
-            <div class="sm-col-8 sm-push-1">
-              <div class="row cols-md">
-                <div class="sm-col-4">
-                  <div class="footer-title text-upper">Additional links</div>
-                  <ul class="list">
-                    <li><a class="content-link" href="index.html">Home</a></li>
-                    <li><a class="content-link" href="faq.html">FAQ</a></li>
-                    <li>
-                      <a class="content-link" href="services.html">Services</a>
-                    </li>
-                    <li><a class="content-link" href="blog.html">Blog</a></li>
-                    <li>
-                      <a class="content-link" href="contact-us.html"
-                        >Contact Us</a
-                      >
-                    </li>
-                  </ul>
+            <div class="sm-col-8 sm-push-1" style="flex: 0 1 auto">
+              <div
+                class="row cols-md"
+                style="display: flex; justify-content: center"
+              >
+                <div
+                  class="sm-col-4"
+                  style="
+                    flex: 0 1 auto;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                  "
+                >
+                  <div
+                    class="footer-title alt-color text-upper"
+                    style="text-align: center"
+                  >
+                    Addresǎ
+                  </div>
+                  <div class="footer-text" style="text-align: center">
+                    Str. Nicolae Labis 42 <br />Brasov
+                  </div>
                 </div>
-                <div class="sm-col-4">
-                  <div class="footer-title text-upper">Services</div>
-                  <ul class="list">
-                    <li>
-                      <a class="content-link" href="service.html"
-                        >Data recovery</a
-                      >
-                    </li>
-                    <li>
-                      <a class="content-link" href="service.html"
-                        >Computer repair</a
-                      >
-                    </li>
-                    <li>
-                      <a class="content-link" href="service.html"
-                        >Mobile service</a
-                      >
-                    </li>
-                    <li>
-                      <a class="content-link" href="service.html"
-                        >Network Solutions</a
-                      >
-                    </li>
-                    <li>
-                      <a class="content-link" href="service.html"
-                        >Technical support</a
-                      >
-                    </li>
-                  </ul>
-                </div>
-                <div class="sm-col-4">
-                  <div class="footer-title text-upper">Socials</div>
-                  <div class="cols-list social-blocks inline-block">
-                    <a href="#" class="list-item"
-                      ><i class="fab fa-facebook-f" aria-hidden="true"></i
-                    ></a>
-                    <a href="#" class="list-item"
-                      ><i class="fab fa-twitter" aria-hidden="true"></i
-                    ></a>
-                    <a href="#" class="list-item"
-                      ><i class="fab fa-pinterest" aria-hidden="true"></i
-                    ></a>
-                    <a href="#" class="list-item"
-                      ><i class="fab fa-google-plus-g" aria-hidden="true"></i
-                    ></a>
-                    <a href="#" class="list-item"
-                      ><i class="fab fa-dribbble" aria-hidden="true"></i
-                    ></a>
+                <div
+                  class="sm-col-4"
+                  style="
+                    flex: 0 1 auto;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                  "
+                >
+                  <div
+                    class="footer-title alt-color text-upper"
+                    style="text-align: center"
+                  >
+                    Contact
+                  </div>
+                  <div class="footer-text" style="text-align: center">
+                    0754 303 818<br />crank.it@icloud.com
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="footer-copyrights text-center ins-md solid-border-top">
-          &copy; 2017 <b>ProFix</b>. All Rights Reserved
+        <div
+          class="footer-copyrights text-center top-separator ins-md"
+          style="text-align: center"
+        >
+          &copy; <span id="current-year"></span> <b>Crank IT</b>. Toate
+          drepturile rezervate
         </div>
       </div>
     </footer>
+
+    <script>
+      function displayCurrentYear() {
+        var year = new Date().getFullYear();
+        document.getElementById("current-year").textContent = year;
+      }
+
+      window.onload = displayCurrentYear;
+    </script>
 
     <!-- jQuery library -->
     <script src="./assets/jquery/jquery-3.3.1.js"></script>
