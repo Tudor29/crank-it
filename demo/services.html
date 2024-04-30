@@ -142,17 +142,20 @@
       </nav>
     </header>
 
-    <section class="with-bg solid-section">
+    <section
+      class="with-bg solid-section"
+      style="padding-top: 50px; padding-bottom: 50px"
+    >
       <div
         class="fix-image-wrap"
-        data-image-src="./assets/images/honeycomb.jpg"
+        data-image-src="./assets/images/motherboard-4.jpg"
         data-parallax="scroll"
       ></div>
-      <!-- <div class="theme-back"></div> -->
+      <div class="theme-back"></div>
       <div class="container page-info">
         <div class="section-alt-head container-md">
           <h1
-            class="section-title text-upper text-lg"
+            class="section-title text-upper text-lg showup-translate-right"
             data-inview-showup="showup-translate-right"
           >
             Servicii
@@ -161,20 +164,21 @@
       </div>
 
       <div class="section-footer">
-        <div class="container" data-inview-showup="showup-translate-down">
+        <div
+          class="container showup-translate-down"
+          data-inview-showup="showup-translate-down"
+        >
           <ul class="page-path">
             <li><a href="index.html">Acasa</a></li>
-
             <li class="path-separator">
               <i class="fas fa-chevron-right" aria-hidden="true"></i>
             </li>
-
             <li>Servicii</li>
           </ul>
         </div>
       </div>
     </section>
-    
+
     <section class="content-section">
       <div class="container">
         <div class="shuffle-js">
@@ -182,24 +186,24 @@
             class="selectable-categories offs-lg text-center"
             data-inview-showup="showup-translate-up"
           >
+            <!-- list -->
+            <!-- here -->
             <a class="active" data-filter="all" href="#">Tot</a>
-            <a href="#" data-filter='["Windows"]'>Windows</a>
-            <a href="#" data-filter='["Computer"]'>Reparatii/Upgrade</a>
-            <a href="#" data-filter='["Printer"]'>Router</a>
+            <a href="#" data-filter='["OS"]'>Sisteme de operare</a>
+            <a href="#" data-filter='["reparatii"]'>Reparatii/Upgrade</a>
+            <a href="#" data-filter='["router"]'>Router/Internet</a>
             <a href="#" data-filter='["Smartphone"]'>Altele...</a>
           </div>
+          <!-- new -->
           <div class="row cols-md rows-md shuffle-items">
             <div
               class="shuffle-item col-12 md-col-4 sm-col-6"
-              data-groups='["Windows"]'
+              data-groups='["OS"]'
             >
               <div class="item muted-bg" data-inview-showup="showup-scale">
                 <a href="service_win.html" class="block-link">
                   <span class="image-wrap"
-                    ><img
-                      class="image"
-                      src="./assets/images/win_2.jpg"
-                      alt=""
+                    ><img class="image" src="./assets/images/win_2.jpg" alt=""
                   /></span>
                   <span class="hover">
                     <span class="hover-show">
@@ -212,11 +216,12 @@
                 </a>
                 <div class="item-content">
                   <div class="item-title text-upper">
-                    <a href="service.html">Instalare Windows</a>
+                    <a href="service_win.html">Instalare Windows</a>
                   </div>
                   <div class="item-text">
-                    Windows 7/8/10/11, pachetul Office (Word, Excel, PowerPoint,
-                    etc.), browsere web, Skype, Zoom, și multe altele.
+                    Configurăm versiunile Windows 7/8/10/11 cu cele mai
+                    utilizate aplicații, incluzând Microsoft Office, browser-e
+                    web și alte utilitare esențiale.
                   </div>
                   <a
                     href="service_win.html"
@@ -226,16 +231,127 @@
                 </div>
               </div>
             </div>
+            <!-- new -->
             <div
               class="shuffle-item col-12 md-col-4 sm-col-6"
-              data-groups='["Computer", "Laptop"]'
+              data-groups='["OS"]'
             >
               <div class="item muted-bg" data-inview-showup="showup-scale">
-                <a href="service.html" class="block-link">
+                <a href="service_mac.html" class="block-link">
+                  <span class="image-wrap"
+                    ><img class="image" src="./assets/images/mac_1.jpg" alt=""
+                  /></span>
+                  <span class="hover">
+                    <span class="hover-show">
+                      <span class="back"></span>
+                      <span class="content"
+                        ><i class="fas fa-search" aria-hidden="true"></i
+                      ></span>
+                    </span>
+                  </span>
+                </a>
+                <div class="item-content">
+                  <div class="item-title text-upper">
+                    <a href="service_mac.html">Instalare Mac OS</a>
+                  </div>
+                  <div class="item-text">
+                    Setare completă și personalizată a sistemului macOS,
+                    inclusiv pachetul Office și aplicații esențiale, pentru o
+                    performanță optimă.
+                  </div>
+                  <a
+                    href="service_mac.html"
+                    class="btn btn-md btns-bordered text-upper pull-right"
+                    >detalii</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- new -->
+            <div
+              class="shuffle-item col-12 md-col-4 sm-col-6"
+              data-groups='["OS"]'
+            >
+              <div class="item muted-bg" data-inview-showup="showup-scale">
+                <a href="service_lnx.html" class="block-link">
+                  <span class="image-wrap"
+                    ><img class="image" src="./assets/images/lnx_1.jpg" alt=""
+                  /></span>
+                  <span class="hover">
+                    <span class="hover-show">
+                      <span class="back"></span>
+                      <span class="content"
+                        ><i class="fas fa-search" aria-hidden="true"></i
+                      ></span>
+                    </span>
+                  </span>
+                </a>
+                <div class="item-content">
+                  <div class="item-title text-upper">
+                    <a href="service_lnx.html">Instalare Linux</a>
+                  </div>
+                  <div class="item-text">
+                    Configurare completă a sistemului de operare Linux,
+                    optimizată pentru stabilitate și securitate. Include
+                    instalarea celor mai necesare aplicații.
+                  </div>
+                  <a
+                    href="service_lnx.html"
+                    class="btn btn-md btns-bordered text-upper pull-right"
+                    >detalii</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- new -->
+            <div
+              class="shuffle-item col-12 md-col-4 sm-col-6"
+              data-groups='["reparatii"]'
+            >
+              <div class="item muted-bg" data-inview-showup="showup-scale">
+                <a href="service_praf.html" class="block-link">
+                  <span class="image-wrap"
+                    ><img class="image" src="./assets/images/praf_2.jpg" alt=""
+                  /></span>
+                  <span class="hover">
+                    <span class="hover-show">
+                      <span class="back"></span>
+                      <span class="content"
+                        ><i class="fas fa-search" aria-hidden="true"></i
+                      ></span>
+                    </span>
+                  </span>
+                </a>
+                <div class="item-content">
+                  <div class="item-title text-upper">
+                    <a href="service_praf.html"
+                      >Curăţare praf + înlocuire pasta</a
+                    >
+                  </div>
+                  <div class="item-text">
+                    Optimizăm răcirea și performanța dispozitivului prin
+                    eliminarea prafului acumulat și aplicarea unei paste
+                    termoconductoare noi.
+                  </div>
+                  <a
+                    href="service_praf.html"
+                    class="btn btn-md btns-bordered text-upper pull-right"
+                    >detalii</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- new -->
+            <div
+              class="shuffle-item col-12 md-col-4 sm-col-6"
+              data-groups='["reparatii"]'
+            >
+              <div class="item muted-bg" data-inview-showup="showup-scale">
+                <a href="service_repar.html" class="block-link">
                   <span class="image-wrap"
                     ><img
                       class="image"
-                      src="http://via.placeholder.com/720x405"
+                      src="./assets/images/repar_2.jpg"
                       alt=""
                   /></span>
                   <span class="hover">
@@ -249,30 +365,33 @@
                 </a>
                 <div class="item-content">
                   <div class="item-title text-upper">
-                    <a href="service.html">Laptop &amp; Mac Upgrade</a>
+                    <a href="service_repar.html"
+                      >Reparatii / Upgrade-uri Sisteme</a
+                    >
                   </div>
                   <div class="item-text">
-                    We working hard to build a reputation of customer
-                    satisfaction through technical excellence and friendly staff
+                    De la înlocuirea componentelor defecte la upgrade-uri (placă
+                    de bază, RAM, HDD/SSD, procesor)
                   </div>
                   <a
-                    href="service.html"
+                    href="service_repar.html"
                     class="btn btn-md btns-bordered text-upper pull-right"
-                    >read more</a
+                    >detalii</a
                   >
                 </div>
               </div>
             </div>
+            <!-- new -->
             <div
               class="shuffle-item col-12 md-col-4 sm-col-6"
-              data-groups='["Smartphone"]'
+              data-groups='["router", "reparatii"]'
             >
               <div class="item muted-bg" data-inview-showup="showup-scale">
-                <a href="service.html" class="block-link">
+                <a href="service_router.html" class="block-link">
                   <span class="image-wrap"
                     ><img
                       class="image"
-                      src="http://via.placeholder.com/720x405"
+                      src="./assets/images/router_2.jpg"
                       alt=""
                   /></span>
                   <span class="hover">
@@ -286,131 +405,24 @@
                 </a>
                 <div class="item-content">
                   <div class="item-title text-upper">
-                    <a href="service.html">Repair Smartphone</a>
+                    <a href="service_router.html"
+                      >Conectivitate și Rețelistică</a
+                    >
                   </div>
                   <div class="item-text">
-                    We working hard to build a reputation of customer
-                    satisfaction through technical excellence and friendly staff
+                    Optimizare și extindere a accesului la internet prin
+                    servicii profesionale de configurare și mentenanță a
+                    rețelelor.
                   </div>
                   <a
-                    href="service.html"
+                    href="service_router.html"
                     class="btn btn-md btns-bordered text-upper pull-right"
-                    >read more</a
+                    >detalii</a
                   >
                 </div>
               </div>
             </div>
-            <div
-              class="shuffle-item col-12 md-col-4 sm-col-6"
-              data-groups='["Smartphone"]'
-            >
-              <div class="item muted-bg" data-inview-showup="showup-scale">
-                <a href="service.html" class="block-link">
-                  <span class="image-wrap"
-                    ><img
-                      class="image"
-                      src="http://via.placeholder.com/720x405"
-                      alt=""
-                  /></span>
-                  <span class="hover">
-                    <span class="hover-show">
-                      <span class="back"></span>
-                      <span class="content"
-                        ><i class="fas fa-search" aria-hidden="true"></i
-                      ></span>
-                    </span>
-                  </span>
-                </a>
-                <div class="item-content">
-                  <div class="item-title text-upper">
-                    <a href="service.html">Tablet Repair</a>
-                  </div>
-                  <div class="item-text">
-                    We working hard to build a reputation of customer
-                    satisfaction through technical excellence and friendly staff
-                  </div>
-                  <a
-                    href="service.html"
-                    class="btn btn-md btns-bordered text-upper pull-right"
-                    >read more</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div
-              class="shuffle-item col-12 md-col-4 sm-col-6"
-              data-groups='["Computer", "Laptop"]'
-            >
-              <div class="item muted-bg" data-inview-showup="showup-scale">
-                <a href="service.html" class="block-link">
-                  <span class="image-wrap"
-                    ><img
-                      class="image"
-                      src="http://via.placeholder.com/720x405"
-                      alt=""
-                  /></span>
-                  <span class="hover">
-                    <span class="hover-show">
-                      <span class="back"></span>
-                      <span class="content"
-                        ><i class="fas fa-search" aria-hidden="true"></i
-                      ></span>
-                    </span>
-                  </span>
-                </a>
-                <div class="item-content">
-                  <div class="item-title text-upper">
-                    <a href="service.html">Repair PC &amp; Laptop Hardware</a>
-                  </div>
-                  <div class="item-text">
-                    We working hard to build a reputation of customer
-                    satisfaction through technical excellence and friendly staff
-                  </div>
-                  <a
-                    href="service.html"
-                    class="btn btn-md btns-bordered text-upper pull-right"
-                    >read more</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div
-              class="shuffle-item col-12 md-col-4 sm-col-6"
-              data-groups='["Computer"]'
-            >
-              <div class="item muted-bg" data-inview-showup="showup-scale">
-                <a href="service.html" class="block-link">
-                  <span class="image-wrap"
-                    ><img
-                      class="image"
-                      src="http://via.placeholder.com/720x405"
-                      alt=""
-                  /></span>
-                  <span class="hover">
-                    <span class="hover-show">
-                      <span class="back"></span>
-                      <span class="content"
-                        ><i class="fas fa-search" aria-hidden="true"></i
-                      ></span>
-                    </span>
-                  </span>
-                </a>
-                <div class="item-content">
-                  <div class="item-title text-upper">
-                    <a href="service.html">Network Solution</a>
-                  </div>
-                  <div class="item-text">
-                    We working hard to build a reputation of customer
-                    satisfaction through technical excellence and friendly staff
-                  </div>
-                  <a
-                    href="service.html"
-                    class="btn btn-md btns-bordered text-upper pull-right"
-                    >read more</a
-                  >
-                </div>
-              </div>
-            </div>
+            <!-- new -->
             <div
               class="shuffle-item col-12 md-col-4 sm-col-6"
               data-groups='["Computer", "Laptop"]'
