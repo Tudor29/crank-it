@@ -255,7 +255,7 @@ initMap = false;
             //Show new image
             $root.find('.file-preview-image')
                 .empty()
-                .html('<img src="' + e.target.result + '" alt="" />');
+                .html('<img src="' + e.target.result + '" alt="imagine alternativa" />');
             $root.addClass('has-file');
         };
         
