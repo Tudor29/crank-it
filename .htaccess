@@ -1,0 +1,20 @@
+# Enable rewrite engine
+RewriteEngine On
+
+# Optionally add a base if your site is not at the root
+# RewriteBase /
+
+# Redirect from .html to slash-based URLs (optional for SEO and consistency)
+RewriteCond %{REQUEST_URI} \.html$
+RewriteRule ^(.*)\.html$ /$1/ [R=301,L]
+
+# Rewrite URL to add .html file extension internally for non-directories
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^([^\.]+?)/?$ $1.html [NC,L]
+
+# Handle trailing slash redirection for non-directory, non-file access
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_URI} !(.+)/$
+RewriteRule ^(.+)$ /$1/ [R=301,L]
