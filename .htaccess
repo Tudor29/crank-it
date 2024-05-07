@@ -1,5 +1,8 @@
 RewriteEngine On
 
+# Redirect /index/ or /index.html to the root domain
+RewriteRule ^index/?(.html)?$ / [NC,R=301,L]
+
 # Check if the request is for an actual file or directory, if not proceed to rewrite
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
