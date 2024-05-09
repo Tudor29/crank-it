@@ -5097,7 +5097,7 @@ body.body .text-valid {
   cursor: pointer;
   font-weight: 500;
   line-height: 1.4;
-  white-space: nowrap;
+  /* white-space: nowrap; */
   overflow: hidden;
   text-overflow: ellipsis;
 }
