@@ -206,16 +206,73 @@
           <div class="menu">
             <ul class="menu-items">
               <li>
-                <a href="/index/">Acasa</a><span class="toggle-icon"></span>
+                <a href="/index/">Acasa</a><span class="toggle-icon"> </span>
               </li>
               <li>
                 <a href="/service-calculatoare-laptop-brasov-crank-it/"
                   >Servicii</a
-                >
+                ><span class="toggle-icon"
+                  ><i class="fas fa-chevron-down" aria-hidden="true"></i
+                ></span>
+                <ul>
+                  <li>
+                    <a href="/instalare-windows-brasov/">Instalare Windows</a>
+                  </li>
+                  <li>
+                    <a href="/instalare-macos-brasov/">Instalare MacOS</a>
+                  </li>
+                  <li>
+                    <a href="/instalare-linux-brasov/">Instalare Linux</a>
+                  </li>
+                  <li>
+                    <a href="/curatare-calculator-laptop-de-praf-brasov/"
+                      >Curatare Praf + Inlocuire Pasta</a
+                    >
+                  </li>
+                  <li>
+                    <a href="/reparatii-service-laptop-calculator-brasov/"
+                      >Reparatii / Upgrade-uri Sisteme</a
+                    >
+                  </li>
+                  <li>
+                    <a href="/instalare-router-wifi-brasov/"
+                      >Conectivitate si Retelistica</a
+                    >
+                  </li>
+                  <li>
+                    <a href="/devirusare-calculator-laptop-brasov/"
+                      >Devirusare</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/asamblare-calculator-pc-unitate-desktop-gaming-brasov/"
+                      >Asamblare Sistem</a
+                    >
+                  </li>
+                  <li>
+                    <a href="/instalare-periferice-imprimanta-brasov/"
+                      >Instalare Periferice</a
+                    >
+                  </li>
+                  <li>
+                    <a href="/consultanta-it-brasov/">Consultanta IT</a>
+                  </li>
+                </ul>
               </li>
               <li>
                 <a href="/contact-adresa-si-program-crank-it-brasov/">Contact</a
-                ><span class="toggle-icon"></span>
+                ><span class="toggle-icon"> </span>
+              </li>
+              <li>
+                <a href="/blog-crank-it/">Blog</a
+                ><span class="toggle-icon"
+                  ><i class="fas fa-chevron-down" aria-hidden="true"></i
+                ></span>
+                <ul>
+                  <li><a href="/articol-blog-crank-it-1/">Blog_1</a></li>
+                  <li><a href="/articol-blog-crank-it-2/">Blog_2</a></li>
+                </ul>
               </li>
             </ul>
 
@@ -249,13 +306,17 @@
       <div class="section-footer">
         <div class="container" data-inview-showup="showup-translate-down">
           <ul class="page-path">
-            <li><a href="index/">Acasa</a></li>
+            <li><a href="/index/">Acasa</a></li>
 
             <li class="path-separator">
               <i class="fas fa-chevron-right" aria-hidden="true"></i>
             </li>
 
-            <li><a href="blog/">Articol Blog</a></li>
+            <li><a href="/blog-crank-it/">Blog</a></li>
+            <li class="path-separator">
+              <i class="fas fa-chevron-right" aria-hidden="true"></i>
+            </li>
+            <li><a href="/articol-blog-crank-it-1/">Articol Blog</a></li>
           </ul>
         </div>
       </div>
@@ -504,9 +565,7 @@
           ></div>
           <form data-inview-showup="showup-translate-up">
             <h4 class="text-upper">Lasa un comentariu</h4>
-            <p>
-              Adresa de email nu va fi publicata.
-            </p>
+            <p>Adresa de email nu va fi publicata.</p>
             <div class="row cols-md rows-md offs-md">
               <div class="sm-col-6">
                 <div class="field-group">
@@ -552,7 +611,9 @@
             </div>
 
             <div class="btn-block">
-              <button class="btn text-upper" type="submit">Postare comentariu</button>
+              <button class="btn text-upper" type="submit">
+                Postare comentariu
+              </button>
             </div>
           </form>
         </section>
@@ -564,6 +625,20 @@
       <div class="loader-image">
         <img class="image" src="/assets/images/parts/loader.gif" alt="" />
       </div>
+    </div>
+    <div>
+      <script
+        src="https://static.elfsight.com/platform/platform.js"
+        data-use-service-core
+        defer
+      ></script>
+      <div
+        class="elfsight-app-7cbccf70-b1db-41d2-92d9-bfecbd76fd08"
+        data-elfsight-app-lazy
+      ></div>
+      <a href="#" class="scroll-top"
+        ><i class="fas fa-angle-up" aria-hidden="true"></i
+      ></a>
     </div>
     <footer class="footer" style="text-align: center">
       <div
@@ -652,6 +727,15 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      function displayCurrentYear() {
+        var year = new Date().getFullYear();
+        document.getElementById("current-year").textContent = year;
+      }
+
+      window.onload = displayCurrentYear;
+    </script>
 
     <!-- jQuery library -->
     <script src="/assets/jquery/jquery-3.3.1.js"></script>

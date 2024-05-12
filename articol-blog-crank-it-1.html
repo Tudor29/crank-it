@@ -261,8 +261,7 @@
                 </ul>
               </li>
               <li>
-                <a href="/contact-adresa-si-program-crank-it-brasov/"
-                  >Contact</a
+                <a href="/contact-adresa-si-program-crank-it-brasov/">Contact</a
                 ><span class="toggle-icon"> </span>
               </li>
               <li>
@@ -307,13 +306,17 @@
       <div class="section-footer">
         <div class="container" data-inview-showup="showup-translate-down">
           <ul class="page-path">
-            <li><a href="index/">Acasa</a></li>
+            <li><a href="/index/">Acasa</a></li>
 
             <li class="path-separator">
               <i class="fas fa-chevron-right" aria-hidden="true"></i>
             </li>
 
-            <li><a href="blog/">Articol Blog</a></li>
+            <li><a href="/blog-crank-it/">Blog</a></li>
+            <li class="path-separator">
+              <i class="fas fa-chevron-right" aria-hidden="true"></i>
+            </li>
+            <li><a href="/articol-blog-crank-it-1/">Articol Blog</a></li>
           </ul>
         </div>
       </div>
@@ -562,9 +565,7 @@
           ></div>
           <form data-inview-showup="showup-translate-up">
             <h4 class="text-upper">Lasa un comentariu</h4>
-            <p>
-              Adresa de email nu va fi publicata.
-            </p>
+            <p>Adresa de email nu va fi publicata.</p>
             <div class="row cols-md rows-md offs-md">
               <div class="sm-col-6">
                 <div class="field-group">
@@ -610,7 +611,9 @@
             </div>
 
             <div class="btn-block">
-              <button class="btn text-upper" type="submit">Postare comentariu</button>
+              <button class="btn text-upper" type="submit">
+                Postare comentariu
+              </button>
             </div>
           </form>
         </section>
@@ -622,6 +625,20 @@
       <div class="loader-image">
         <img class="image" src="/assets/images/parts/loader.gif" alt="" />
       </div>
+    </div>
+    <div>
+      <script
+        src="https://static.elfsight.com/platform/platform.js"
+        data-use-service-core
+        defer
+      ></script>
+      <div
+        class="elfsight-app-7cbccf70-b1db-41d2-92d9-bfecbd76fd08"
+        data-elfsight-app-lazy
+      ></div>
+      <a href="#" class="scroll-top"
+        ><i class="fas fa-angle-up" aria-hidden="true"></i
+      ></a>
     </div>
     <footer class="footer" style="text-align: center">
       <div
@@ -710,6 +727,15 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      function displayCurrentYear() {
+        var year = new Date().getFullYear();
+        document.getElementById("current-year").textContent = year;
+      }
+
+      window.onload = displayCurrentYear;
+    </script>
 
     <!-- jQuery library -->
     <script src="/assets/jquery/jquery-3.3.1.js"></script>
