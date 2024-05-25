@@ -19,8 +19,6 @@ Redirect 301 /consultanta-it-brasov/contact-adresa-si-program-crank-it-brasov/ /
 Redirect 301 /service_periph.html /instalare-periferice-imprimanta-brasov/
 Redirect 301 /articol-blog-crank-it-2/ /blog-crank-it/
 Redirect 301 /service_cons.html /consultanta-it-brasov/
-# Removed self-referential redirection
-# Redirect 301 /blog-crank-it/ /blog-crank-it/
 Redirect 301 /service_praf.html /curatare-calculator-laptop-de-praf-brasov/
 Redirect 301 /service_vir.html /devirusare-calculator-laptop-brasov/
 Redirect 301 /service_lnx.html /instalare-linux-brasov/
@@ -43,6 +41,10 @@ Order allow,deny
 Deny from all
 </Files>
 
+# Custom error pages
+ErrorDocument 404 /404.html
+ErrorDocument 500 /500.html
+
 # Ensure favicon is served correctly
 <IfModule mod_mime.c>
   AddType image/x-icon .ico
@@ -61,4 +63,9 @@ Deny from all
   ExpiresByType application/x-shockwave-flash "access plus 1 month"
   ExpiresByType image/x-icon "access plus 1 year"
   ExpiresDefault "access plus 2 days"
+</IfModule>
+
+# Add canonical header to prevent duplicate content
+<IfModule mod_headers.c>
+    Header set Link "<https://%{HTTP_HOST}%{REQUEST_URI}>; rel=\"canonical\""
 </IfModule>
