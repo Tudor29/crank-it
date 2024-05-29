@@ -1,11 +1,71 @@
 RewriteEngine On
 
+# Redirect HTTP to HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
 # Redirect /index/ or /index.html to the root domain
 RewriteRule ^index/?(.html)?$ / [NC,R=301,L]
+
+# Allow access to favicon
+RewriteRule ^assets/images/top_logo.ico$ - [L]
+
+# Redirect any .html requests to clean URLs (SEO friendly)
+RewriteCond %{THE_REQUEST} \s/([^.]+)\.html[\s?] [NC]
+RewriteRule ^ /%1 [R=301,L]
+
+# Old URLs to new URLs redirection
+Redirect 301 /consultanta-it-brasov/contact-adresa-si-program-crank-it-brasov/ /contact-adresa-si-program-crank-it-brasov/
+Redirect 301 /service_periph.html /instalare-periferice-imprimanta-brasov/
+Redirect 301 /articol-blog-crank-it-2/ /blog-crank-it/
+Redirect 301 /service_cons.html /consultanta-it-brasov/
+Redirect 301 /service_praf.html /curatare-calculator-laptop-de-praf-brasov/
+Redirect 301 /service_vir.html /devirusare-calculator-laptop-brasov/
+Redirect 301 /service_lnx.html /instalare-linux-brasov/
+Redirect 301 /service_gmg.html /asamblare-calculator-pc-unitate-desktop-gaming-brasov/
 
 # Check if the request is for an actual file or directory, if not proceed to rewrite
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
 
-# Rewrite requests to add .html file extension internally
-RewriteRule ^([^\.]+?)/?$ $1.html [NC,L]
+# Internally rewrite requests to add .html file extension
+RewriteRule ^([^/]+?)/?$ $1.html [NC,L]
+
+# Ensure trailing slash for directories (SEO friendly)
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^(.+[^/])$ %{REQUEST_URI}/ [R=301,L]
+
+# Prevent access to .htaccess file
+<Files .htaccess>
+Order allow,deny
+Deny from all
+</Files>
+
+# Custom error pages
+ErrorDocument 404 /404.html
+ErrorDocument 500 /500.html
+
+# Ensure favicon is served correctly
+<IfModule mod_mime.c>
+  AddType image/x-icon .ico
+</IfModule>
+
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/jpg "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/gif "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType text/html "access plus 1 month"
+  ExpiresByType application/pdf "access plus 1 month"
+  ExpiresByType text/x-javascript "access plus 1 month"
+  ExpiresByType application/x-shockwave-flash "access plus 1 month"
+  ExpiresByType image/x-icon "access plus 1 year"
+  ExpiresDefault "access plus 2 days"
+</IfModule>
+
+# Add canonical header to prevent duplicate content
+<IfModule mod_headers.c>
+    Header set Link "<https://%{HTTP_HOST}%{REQUEST_URI}>; rel=\"canonical\""
+</IfModule>
