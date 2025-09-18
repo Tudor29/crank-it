@@ -1,85 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- Homepage -->
   <url>
-    <loc>https://instalarewindowsbrasov.com/</loc>
+    <loc>https://crank-it.ro/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
-  <!-- Pagini servicii principale -->
   <url>
-    <loc>https://instalarewindowsbrasov.com/reparatii-service-laptop-calculator-brasov.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <url>
-    <loc>https://instalarewindowsbrasov.com/service-calculatoare-laptop-brasov-crank-it.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <url>
-    <loc>https://instalarewindowsbrasov.com/instalare-windows-brasov.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <url>
-    <loc>https://instalarewindowsbrasov.com/curatare-calculator-laptop-de-praf-brasov.html</loc>
+    <loc>https://crank-it.ro/asamblare-calculator-pc-unitate-desktop-gaming-brasov.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://instalarewindowsbrasov.com/devirusare-calculator-laptop-brasov.html</loc>
+    <loc>https://crank-it.ro/consultanta-it-brasov.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://instalarewindowsbrasov.com/instalare-linux-brasov.html</loc>
+    <loc>https://crank-it.ro/contact-adresa-si-program-crank-it-brasov.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://instalarewindowsbrasov.com/instalare-macos-brasov.html</loc>
+    <loc>https://crank-it.ro/curatare-calculator-laptop-de-praf-brasov.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://crank-it.ro/devirusare-calculator-laptop-brasov.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://crank-it.ro/instalare-linux-brasov.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://instalarewindowsbrasov.com/instalare-periferice-imprimanta-brasov.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://instalarewindowsbrasov.com/instalare-router-wifi-brasov.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://instalarewindowsbrasov.com/asamblare-calculator-pc-unitate-desktop-gaming-brasov.html</loc>
+    <loc>https://crank-it.ro/instalare-macos-brasov.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://instalarewindowsbrasov.com/consultanta-it-brasov.html</loc>
+    <loc>https://crank-it.ro/instalare-periferice-imprimanta-brasov.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
-  <!-- Pagina de contact -->
   <url>
-    <loc>https://instalarewindowsbrasov.com/contact-adresa-si-program-crank-it-brasov.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <loc>https://crank-it.ro/instalare-router-wifi-brasov.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://crank-it.ro/instalare-windows-brasov.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://crank-it.ro/reparatii-service-laptop-calculator-brasov.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://crank-it.ro/service-calculatoare-laptop-brasov-crank-it.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
   </url>
 
 </urlset>

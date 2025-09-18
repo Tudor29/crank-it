@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://instalarewindowsbrasov.com/sitemap.xml
+Sitemap: https://crank-it.ro/sitemap.xml
