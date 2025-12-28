@@ -445,16 +445,76 @@
         </section>
       </div>
     </div>
+    <!-- WhatsApp Floating Button -->
     <div>
-      <script
-        data-use-service-core=""
-        defer=""
-        src="https://static.elfsight.com/platform/platform.js"
-      ></script>
-      <div class="elfsight-app-6de9970e-2dc4-4e1f-a7b8-ea25139e8320"></div>
-      <a class="scroll-top mb-5" href="#"
-        ><i aria-hidden="true" class="fas fa-angle-up"></i
-      ></a>
+      <style>
+        .whatsapp-float {
+          position: fixed;
+          bottom: 30px;
+          right: 30px;
+          width: 60px;
+          height: 60px;
+          background: #25d366 !important;
+          border: none;
+          border-radius: 50%;
+          box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+          z-index: 1000;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: all 0.3s ease;
+          cursor: pointer;
+        }
+
+        .whatsapp-float:hover {
+          transform: scale(1.1);
+          box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
+        }
+
+        .whatsapp-float:focus {
+          background: #25d366 !important;
+        }
+
+        .whatsapp-float img {
+          width: 28px;
+          height: 28px;
+          display: block;
+          filter: brightness(0) invert(1);
+        }
+
+        @media (max-width: 768px) {
+          .whatsapp-float {
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+          }
+
+          .whatsapp-float img {
+            width: 24px;
+            height: 24px;
+          }
+        }
+      </style>
+
+      <a-button
+        type="primary"
+        class="whatsapp-float"
+        onclick="openWhatsApp()"
+        shape="circle"
+        size="large"
+      >
+        <img src="assets/images/whatsapp_icon.svg" alt="WhatsApp" />
+      </a-button>
+
+      <script>
+        const openWhatsApp = () => {
+          const phoneNumber = "40773317478";
+          const message = encodeURIComponent("Buna ziua. ");
+          const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
+          window.open(whatsappUrl, "_blank");
+        };
+      </script>
     </div>
     <footer class="footer alt-bg">
       <div class="container only-xs-text-justify-center">

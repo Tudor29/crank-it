@@ -534,12 +534,11 @@
                       <i aria-hidden="true" class="fas fa-dollar-sign"></i>
                     </div>
                     <div class="feature-title text-upper">
-                      Fǎrǎ rezolvare? fǎrǎ taxe!
+                      Avem prețuri corecte.
                     </div>
                   </div>
                   <div class="feature-text">
-                    Daca nu te putem ajuta nu
-                    vei avea nimic de achitat.
+                    Prețuri accesibile pentru toate buzunarele.
                   </div>
                 </div>
               </div>
@@ -650,31 +649,31 @@
           <div class="sm-col-3">
             <div class="counter">
               <div class="counter-title text-upper">
-                400+ Clienți satisfǎcuți
+                1200+ Clienți satisfǎcuți
               </div>
-              <div class="counter-value" data-waypoint-counter="427">427</div>
+              <div class="counter-value" data-waypoint-counter="1204">1204</div>
             </div>
           </div>
           <div class="sm-col-3">
             <div class="counter">
               <div class="counter-title text-upper">
-                250+ Proiecte terminate
+                700+ Proiecte terminate
               </div>
-              <div class="counter-value" data-waypoint-counter="268">268</div>
+              <div class="counter-value" data-waypoint-counter="784">784</div>
             </div>
           </div>
           <div class="sm-col-3">
             <div class="counter">
-              <div class="counter-title text-upper">300+ Sisteme reparate</div>
-              <div class="counter-value" data-waypoint-counter="313">313</div>
+              <div class="counter-title text-upper">800+ Sisteme reparate</div>
+              <div class="counter-value" data-waypoint-counter="852">852</div>
             </div>
           </div>
           <div class="sm-col-3">
             <div class="counter">
               <div class="counter-title text-upper">
-                500+ Componente schimbate
+                1500+ Componente schimbate
               </div>
-              <div class="counter-value" data-waypoint-counter="506">506</div>
+              <div class="counter-value" data-waypoint-counter="1557">1557</div>
             </div>
           </div>
         </div>
@@ -696,9 +695,9 @@
             <i aria-hidden="true" class="fas fa-bicycle"></i>
           </div>
           <div class="contact-content">
-            <div class="contact-title">Cere o consultatie gratuita!</div>
+            <div class="contact-title">Fǎ o programare acum!</div>
             <div class="text-justify only-xs-text-justify-center">
-              Ne deplasam la fata locului pentru constatare
+              Hai cu dispozitivul tǎu in service.
             </div>
           </div>
           <div class="contact-btn">
@@ -760,16 +759,77 @@
         </div>
       </div>
     </section>
+
+    <!-- WhatsApp Floating Button -->
     <div>
-      <script
-        data-use-service-core=""
-        defer=""
-        src="https://static.elfsight.com/platform/platform.js"
-      ></script>
-      <div class="elfsight-app-6de9970e-2dc4-4e1f-a7b8-ea25139e8320"></div>
-      <a class="scroll-top mb-5" href="#"
-        ><i aria-hidden="true" class="fas fa-angle-up"></i
-      ></a>
+      <style>
+        .whatsapp-float {
+          position: fixed;
+          bottom: 30px;
+          right: 30px;
+          width: 60px;
+          height: 60px;
+          background: #25d366 !important;
+          border: none;
+          border-radius: 50%;
+          box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+          z-index: 1000;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: all 0.3s ease;
+          cursor: pointer;
+        }
+
+        .whatsapp-float:hover {
+          transform: scale(1.1);
+          box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
+        }
+
+        .whatsapp-float:focus {
+          background: #25d366 !important;
+        }
+
+        .whatsapp-float img {
+          width: 28px;
+          height: 28px;
+          display: block;
+          filter: brightness(0) invert(1);
+        }
+
+        @media (max-width: 768px) {
+          .whatsapp-float {
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+          }
+
+          .whatsapp-float img {
+            width: 24px;
+            height: 24px;
+          }
+        }
+      </style>
+
+      <a-button
+        type="primary"
+        class="whatsapp-float"
+        onclick="openWhatsApp()"
+        shape="circle"
+        size="large"
+      >
+        <img src="assets/images/whatsapp_icon.svg" alt="WhatsApp" />
+      </a-button>
+
+      <script>
+        const openWhatsApp = () => {
+          const phoneNumber = "40773317478";
+          const message = encodeURIComponent("Buna ziua. ");
+          const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
+          window.open(whatsappUrl, "_blank");
+        };
+      </script>
     </div>
     <footer class="footer alt-bg">
       <div class="container only-xs-text-justify-center">
