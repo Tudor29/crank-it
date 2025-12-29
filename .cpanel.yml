@@ -1,5 +1,0 @@
----
-deployment:
-  tasks:
-    - export DEPLOYPATH=/home/instalar/crank-it.ro/
-    - /usr/bin/rsync -av --delete --exclude ".git/" --exclude ".cpanel.yml" --exclude ".cpanel.yml.example" ./ "$DEPLOYPATH"
