@@ -178,6 +178,34 @@
           width: 100%;
         }
       }
+      /* centred button row under a section */
+      .section-cta {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        gap: 14px;
+      }
+      .section-cta .btn {
+        margin: 0;
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+      }
+      @media (max-width: 767px) {
+        .section-cta {
+          gap: 12px;
+        }
+        .section-cta .btn {
+          -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+          max-width: 320px;
+          padding: 0 18px;
+        }
+      }
     </style>
     <style>
       /* sticky call bar, mobile only */
@@ -657,7 +685,7 @@
             </div>
           </div>
         </div>
-        <div class="text-center shift-xl">
+        <div class="text-center shift-xl section-cta">
           <a
             class="btn text-upper"
             data-inview-showup="showup-translate-up"
@@ -668,7 +696,6 @@
             class="btn text-upper"
             data-inview-showup="showup-translate-up"
             href="/preturi-servicii-it-brasov.html"
-            style="margin-left: 10px"
             ><i aria-hidden="true" class="fas fa-tags"></i>&nbsp;&nbsp;Prețuri și
             tarife</a
           >
