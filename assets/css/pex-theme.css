@@ -2015,8 +2015,7 @@ th {
     [5. Colors, Backgrounds, Shadows]
 */
 .decorated-bg {
-  /* Transparent background with icons */
-  background-image: url("../images/parts/pattern.png");
+  /* the pattern image was never shipped with the theme, so no background here */
   background-repeat: repeat;
 }
 .theme-back,
@@ -7301,3 +7300,4 @@ table {
 .page-sidebar-left > .page-content:only-child > .content-section {
   max-width: 900px;
 }
+

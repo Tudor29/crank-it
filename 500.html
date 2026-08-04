@@ -9,8 +9,10 @@
       name="viewport"
     />
     <meta content="noindex, follow" name="robots" />
+    <meta content="A apărut o eroare temporară pe crank-it.ro. Încearcă din nou în câteva minute sau contactează-ne direct la 0773 317 478." name="description" />
     <title>Eroare de server | Crank IT Brașov</title>
-    <link href="/assets/images/top_logo.ico" rel="icon" type="image/ico" />
+    <link href="/assets/images/favicon-32.png" rel="icon" sizes="32x32" type="image/png" />
+    <link href="/assets/images/apple-touch-icon.png" rel="apple-touch-icon" />
     <link href="/assets/pentix/css/pentix.css?v=20260804" rel="stylesheet" type="text/css" />
     <link href="/assets/css/pex-theme.css?v=20260804" rel="stylesheet" type="text/css" />
     <link
@@ -57,16 +59,57 @@
         display: block;
       }
     </style>
+    <meta content="website" property="og:type" />
+    <meta content="Crank IT" property="og:site_name" />
+    <meta content="ro_RO" property="og:locale" />
+    <meta content="Eroare de server | Crank IT Brașov" property="og:title" />
+    <meta content="A apărut o eroare temporară pe crank-it.ro. Încearcă din nou în câteva minute sau contactează-ne direct la 0773 317 478." property="og:description" />
+    <meta content="https://crank-it.ro/500.html" property="og:url" />
+    <meta content="https://crank-it.ro/assets/images/og-crank-it.jpg" property="og:image" />
+    <meta content="1200" property="og:image:width" />
+    <meta content="630" property="og:image:height" />
+    <meta content="summary_large_image" name="twitter:card" />
+    <meta content="Eroare de server | Crank IT Brașov" name="twitter:title" />
+    <meta content="A apărut o eroare temporară pe crank-it.ro. Încearcă din nou în câteva minute sau contactează-ne direct la 0773 317 478." name="twitter:description" />
+    <meta content="https://crank-it.ro/assets/images/og-crank-it.jpg" name="twitter:image" />
+    <style>
+      .mobile-callbar {
+        display: none;
+      }
+      @media (max-width: 767px) {
+        .mobile-callbar {
+          display: flex;
+          position: fixed;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          z-index: 1001;
+          box-shadow: 0 -2px 12px rgba(0, 0, 0, 0.25);
+        }
+        .mobile-callbar a {
+          flex: 1 1 100%;
+          padding: 14px 8px;
+          text-align: center;
+          font-weight: 600;
+          font-size: 15px;
+          color: #fff !important;
+          text-transform: uppercase;
+          background: #29abe2;
+        }
+        .mobile-callbar i {
+          margin-right: 6px;
+        }
+        body {
+          padding-bottom: 52px;
+        }
+      }
+    </style>
   </head>
 
   <body class="body">
     <main class="error-page">
       <div class="error-page__inner">
-        <img
-          alt="Crank IT Brașov, service laptop și calculatoare"
-          class="error-page__logo"
-          src="/assets/images/logo.webp"
-        />
+        <img alt="Crank IT Brașov, service laptop și calculatoare" class="error-page__logo" src="/assets/images/logo.webp" />
         <p class="error-page__code">500</p>
         <h1 class="error-page__title">Eroare temporară de server</h1>
         <p class="error-page__text">
@@ -76,10 +119,16 @@
         <p class="error-page__links">
           <a href="/">Prima pagină</a>
           <a href="/service-calculatoare-laptop-brasov-crank-it.html">Service calculatoare și laptopuri</a>
+          <a href="/preturi-servicii-it-brasov.html">Prețuri servicii</a>
           <a href="/creare-site-web-brasov.html">Creare site web</a>
           <a href="/contact-adresa-si-program-crank-it-brasov.html">Contact</a>
         </p>
       </div>
     </main>
+    <div class="mobile-callbar">
+      <a class="cb-call" href="tel:+40773317478"
+        ><i aria-hidden="true" class="fas fa-phone"></i>Sună acum</a
+      >
+    </div>
   </body>
 </html>
