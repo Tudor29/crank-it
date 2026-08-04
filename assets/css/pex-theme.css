@@ -7234,3 +7234,70 @@ a.item-label:hover {
   justify-content: space-between;
   align-items: center;
 }
+
+
+/*------------------------------------------------------------------
+    [Responsive fixes, added 2026-08-04]
+*/
+/* no horizontal scroll at any width: the parallax mirror and the
+   slider track are wider than the viewport by design */
+html,
+body {
+  overflow-x: hidden;
+}
+.parallax-mirror {
+  max-width: 100vw;
+}
+/* slider arrows park outside the frame, keep them inside it */
+.flexslider .flex-prev {
+  left: 0;
+}
+.flexslider .flex-next {
+  right: 0;
+}
+.flexslider:hover .flex-prev {
+  left: 20px;
+}
+.flexslider:hover .flex-next {
+  right: 20px;
+}
+@media (min-width: 1200px) {
+  .flexslider:hover .flex-prev {
+    left: 50px;
+  }
+  .flexslider:hover .flex-next {
+    right: 50px;
+  }
+}
+/* long words and urls must never widen the page */
+.content-text,
+.content-text p,
+.price-list li,
+.list li,
+.accordion-content p,
+.footer-text {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+/* media stays inside its box */
+img,
+iframe,
+table {
+  max-width: 100%;
+}
+
+/* 12 pages use the sidebar layout but carry no sidebar, so the theme's
+   350px reservation left the text in a narrow column with dead space */
+.page-sidebar-right > .page-content:only-child {
+  float: none;
+  padding-right: 0;
+}
+.page-sidebar-left > .page-content:only-child {
+  float: none;
+  padding-left: 0;
+}
+/* keep the reading column comfortable on very wide screens */
+.page-sidebar-right > .page-content:only-child > .content-section,
+.page-sidebar-left > .page-content:only-child > .content-section {
+  max-width: 900px;
+}

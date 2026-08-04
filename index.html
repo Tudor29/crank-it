@@ -13,7 +13,7 @@
       name="description"
     />
     <title>
-      Service Laptop Brașov | Reparații Laptop &amp; Calculatoare Crank IT
+      Service Laptop Brașov | Reparații PC și Laptop, Crank IT
     </title>
     <link href="https://crank-it.ro/" rel="canonical" />
     <link href="/assets/images/top_logo.ico" rel="icon" type="image/ico" />
@@ -54,40 +54,204 @@
     <!-- Pentix styles start -->
     <!-- Core styles -->
     <link
-      href="/assets/pentix/css/pentix.css"
+      href="/assets/pentix/css/pentix.css?v=20260804"
       rel="stylesheet"
       type="text/css"
     />
     <!-- Theme styles -->
-    <link href="/assets/css/pex-theme.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/css/pex-theme.css?v=20260804" rel="stylesheet" type="text/css" />
     <meta
       content="service laptop Brașov, reparații laptop Brașov, service calculatoare Brașov, curățare laptop Brașov, instalare Windows Brașov, Crank IT"
       name="keywords"
     />
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "Crank IT - Service Laptop Brașov",
-        "image": "https://crank-it.ro/assets/images/logo.webp",
-        "url": "https://crank-it.ro/",
-        "telephone": "+40 773 317 478",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Str. Nicolae Labiș 42",
-          "addressLocality": "Brașov",
-          "postalCode": "500112",
-          "addressCountry": "RO"
-        },
-        "openingHours": "Mo-Su 09:00-21:00",
-        "priceRange": "€",
-        "sameAs": [
-          "https://www.facebook.com/instalarewindowsbrasov.crankit/",
-          "https://www.instagram.com/crank.it.bv/",
-          "https://www.google.com/maps/place/Crank+IT+-+Service+Laptop+PC+Brasov/"
-        ]
+    <style>
+      /* equal-height service price cards */
+      .price-cards-equal,
+      .price-cards-equal > .md-col-6 > .row {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+        align-items: stretch;
       }
-    </script>
+      .price-cards-equal > .md-col-6,
+      .price-cards-equal > .md-col-6 > .row > .sm-col-6 {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        float: none;
+      }
+      .price-cards-equal > .md-col-6 > .row {
+        width: 100%;
+      }
+      .price-cards-equal .price-block.simple {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        width: 100%;
+      }
+      .price-cards-equal .price-block.simple .price {
+        white-space: nowrap;
+      }
+      /* 4 across, from 1200px up */
+      @media (min-width: 1200px) {
+        .price-cards-equal .price-block.simple .price {
+          font-size: 36px;
+        }
+      }
+      /* 4 across but narrower cards */
+      @media (min-width: 992px) and (max-width: 1199px) {
+        .price-cards-equal .price-block.simple .price {
+          font-size: 26px;
+        }
+        .price-cards-equal .price-block.simple .price-list li {
+          font-size: 14px;
+        }
+        .price-cards-equal .price-block.simple {
+          padding: 26px 10px 20px;
+        }
+      }
+      /* tablet: 2 across */
+      @media (min-width: 768px) and (max-width: 991px) {
+        .price-cards-equal > .md-col-6 {
+          width: 100% !important;
+        }
+        .price-cards-equal > .md-col-6 > .row {
+          width: 100%;
+        }
+        .price-cards-equal .price-block.simple .price {
+          font-size: 32px;
+        }
+        .price-cards-equal .price-image {
+          height: 70px;
+        }
+      }
+      .price-cards-equal .price-block.simple .price-list {
+        -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
+      }
+      .price-cards-equal .price-block.simple .btn {
+        margin-top: auto;
+        -ms-flex-item-align: center;
+        align-self: center;
+      }
+      @media (max-width: 767px) {
+        /* one card per row, evenly spaced */
+        .price-cards-equal {
+          display: block !important;
+          margin: 0 !important;
+        }
+        .price-cards-equal > .md-col-6,
+        .price-cards-equal > .md-col-6 > .row {
+          display: block !important;
+          width: 100% !important;
+          margin: 0 !important;
+          padding: 0 !important;
+        }
+        .price-cards-equal .sm-col-6 {
+          display: block !important;
+          width: 100% !important;
+          padding: 0 !important;
+          margin: 0 0 16px !important;
+        }
+        .price-cards-equal > .md-col-6:last-child > .row > .sm-col-6:last-child {
+          margin-bottom: 0 !important;
+        }
+        .price-cards-equal .price-block.simple {
+          height: auto !important;
+          padding: 26px 18px 24px;
+        }
+        .price-cards-equal .price-image {
+          height: 64px;
+        }
+        .price-cards-equal .price-block.simple .price-title {
+          min-height: 0;
+          margin-bottom: 4px;
+        }
+        .price-cards-equal .price-block.simple .price {
+          font-size: 32px;
+          margin-bottom: 18px;
+        }
+        .price-cards-equal .price-block.simple .price-list {
+          margin-bottom: 22px;
+        }
+        .price-cards-equal .price-block.simple .btn {
+          width: 100%;
+        }
+      }
+    </style>
+    <style>
+      /* sticky call bar, mobile only */
+      .mobile-callbar {
+        display: none;
+      }
+      @media (max-width: 767px) {
+        .mobile-callbar {
+          display: flex;
+          position: fixed;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          z-index: 1001;
+          box-shadow: 0 -2px 12px rgba(0, 0, 0, 0.25);
+        }
+        .mobile-callbar a {
+          flex: 1 1 100%;
+          padding: 14px 8px;
+          text-align: center;
+          font-weight: 600;
+          font-size: 15px;
+          color: #fff !important;
+          text-transform: uppercase;
+          letter-spacing: 0.02em;
+        }
+        .mobile-callbar .cb-call {
+          background: #29abe2;
+        }
+        .mobile-callbar i {
+          margin-right: 6px;
+        }
+        body {
+          padding-bottom: 52px;
+        }
+        .whatsapp-float {
+          bottom: 72px !important;
+        }
+      }
+    </style>
+    <style>
+      .map-cta {
+        padding: 30px 0 36px;
+      }
+      .map-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 9px;
+        padding: 12px 24px;
+        border: 1px solid #29abe2;
+        border-radius: 30px;
+        color: #29abe2;
+        font-size: 13px;
+        font-weight: 600;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        line-height: 1;
+        transition: background 0.25s ease, color 0.25s ease;
+      }
+      .map-btn:hover,
+      .map-btn:focus {
+        background: #29abe2;
+        color: #fff;
+      }
+    </style>
   </head>
   <body class="body loader-loading">
     <header class="header header-over">
@@ -118,7 +282,7 @@
                 ><i aria-hidden="true" class="fas fa-home"></i></span
               ><a
                 href="https://www.google.com/maps/place/Crank+IT+-+Instalare+Windows+Brasov/@45.6799301,25.6069555,17z/data=!3m1!4b1!4m6!3m5!1s0x46d3f34b9c2d890b:0xc6f4975f759ed655!8m2!3d45.6799301!4d25.6069555!16s%2Fg%2F11y47g7mw_?entry=ttu"
-                >Str. Nicolae Labis 42, Brasov</a
+                >Str. Nicolae Labiș 42, Brașov</a
               >
             </div>
             <div class="list-item">
@@ -131,7 +295,7 @@
               <a
                 href="https://www.google.com/maps/place/Crank+IT+-+Instalare+Windows+Brasov/@45.6524781,25.5964628,12z/data=!3m1!4b1!4m6!3m5!1s0x46d3f34b9c2d890b:0xc6f4975f759ed655!8m2!3d45.6524781!4d25.5964628!16s%2Fg%2F11y47g7mw_?entry=ttu"
                 ><img
-                  alt="google-maps"
+                  alt="Crank IT pe Google Maps"
                   height="27"
                   loading="lazy"
                   src="/assets/images/google_logo.webp"
@@ -148,7 +312,7 @@
             <div class="logo">
               <a href="/index/"
                 ><img
-                  alt="instalare windows brasov"
+                  alt="Crank IT Brașov, service laptop și calculatoare"
                   loading="lazy"
                   src="/assets/images/logo.webp"
               /></a>
@@ -170,7 +334,7 @@
                   <i aria-hidden="true" class="far fa-clock"></i>
                 </div>
                 <div>Program</div>
-                <div class="colorful">Luni - Duminica: NON STOP</div>
+                <div class="colorful">Luni - Duminică: NON STOP</div>
               </div>
             </div>
             <div class="menu-btn xs-hidden">
@@ -194,7 +358,7 @@
             <div class="menu" style="top: 124px">
               <ul class="menu-items">
                 <li>
-                  <a href="/index/">Acasa</a><span class="toggle-icon"> </span>
+                  <a href="/index/">Acasă</a><span class="toggle-icon"> </span>
                 </li>
                 <li>
                   <a href="/service-calculatoare-laptop-brasov-crank-it/"
@@ -214,17 +378,17 @@
                     </li>
                     <li>
                       <a href="/curatare-calculator-laptop-de-praf-brasov/"
-                        >Curatare Praf + Inlocuire Pasta</a
+                        >Curățare Praf + Inlocuire Pasta</a
                       >
                     </li>
                     <li>
                       <a href="/reparatii-service-laptop-calculator-brasov/"
-                        >Reparatii / Upgrade-uri Sisteme</a
+                        >Reparații / Upgrade-uri Sisteme</a
                       >
                     </li>
                     <li>
                       <a href="/instalare-router-wifi-brasov/"
-                        >Conectivitate si Retelistica</a
+                        >Conectivitate și Rețelistică</a
                       >
                     </li>
                     <li>
@@ -244,12 +408,16 @@
                       >
                     </li>
                     <li>
-                      <a href="/consultanta-it-brasov/">Consultanta IT</a>
+                      <a href="/consultanta-it-brasov/">Consultanță IT</a>
                     </li>
                     <li>
                       <a href="/creare-site-web-brasov/">Creare Site Web</a>
                     </li>
                   </ul>
+                </li>
+                <li>
+                  <a href="/preturi-servicii-it-brasov/">Prețuri</a
+                  ><span class="toggle-icon"> </span>
                 </li>
                 <li>
                   <a href="/contact-adresa-si-program-crank-it-brasov/"
@@ -297,13 +465,14 @@
             <div class="theme-back"></div>
             <div class="pos-center text-center col-12 text-white">
               <div class="banner-title res-text-xxl">
-                Deplasare la domiciliul clientului
+                Service rapid în Brașov
               </div>
               <div class="banner-subtitle res-text-md">
-                Bucură-te de comoditatea serviciilor noastre IT la tine acasă.
+                Lucrările se fac la sediul nostru, cu diagnosticare gratuită
                 <br />
-                Suntem gata să te ajutăm cu problemele tale tehnice, <br />
-                fără să fie nevoie să te deplasezi.
+                și preț confirmat înainte de a începe. Pentru situații
+                punctuale, <br />
+                ne putem deplasa la domiciliu, în funcție de disponibilitate.
               </div>
             </div>
           </div>
@@ -317,7 +486,7 @@
             <div class="theme-back"></div>
             <div class="pos-center text-center col-12 text-white">
               <div class="banner-title res-text-xxl">
-                Contacteazǎ-ne acum pentru o programare
+                Contactează-ne acum pentru o programare
               </div>
               <div class="banner-subtitle res-text-md">
                 Suna acum și te programam pana cel tarziu a doua zi.
@@ -395,7 +564,7 @@
           </h2>
           <p data-inview-showup="showup-translate-left"></p>
         </div>
-        <div class="row cols-md rows-md">
+        <div class="row cols-md rows-md price-cards-equal">
           <div class="md-col-6">
             <div class="row cols-md rows-md">
               <div class="sm-col-6">
@@ -406,7 +575,7 @@
                   <div class="price-back"></div>
                   <div class="price-image">
                     <img
-                      alt="mini logo"
+                      alt="Instalare Windows pe laptop"
                       class="image"
                       loading="lazy"
                       src="/assets/images/icons/notebook-dark.webp"
@@ -415,7 +584,6 @@
                   <div>
                     <h2 class="price-title">Instalare Windows</h2>
                   </div>
-                  <!-- <div class="price-subtext">de la...</div> -->
                   <div class="price">150 RON</div>
                   <ul class="price-list">
                     <li>+ pachetul Office</li>
@@ -425,7 +593,7 @@
                   <a
                     class="btn-md btns-bordered btn text-upper"
                     href="/instalare-windows-brasov/"
-                    >detalii</a
+                    >Detalii</a
                   >
                 </div>
               </div>
@@ -437,7 +605,7 @@
                   <div class="price-back"></div>
                   <div class="price-image">
                     <img
-                      alt="mini logo"
+                      alt="Curățare de praf pentru calculator"
                       class="image"
                       loading="lazy"
                       src="/assets/images/icons/computer-dark.webp"
@@ -446,8 +614,7 @@
                   <div>
                     <h2 class="price-title">Curățare și Întreținere</h2>
                   </div>
-                  <!-- <div class="price-subtext">de la...</div> -->
-                  <div class="price">150 RON</div>
+                  <div class="price">150-300 RON</div>
                   <ul class="price-list">
                     <li>Eliminarea prafului din sisteme</li>
                     <li>Înlocuire pasta termoconductoare</li>
@@ -456,7 +623,7 @@
                   <a
                     class="btn-md btns-bordered btn text-upper"
                     href="/curatare-calculator-laptop-de-praf-brasov/"
-                    >detalii</a
+                    >Detalii</a
                   >
                 </div>
               </div>
@@ -472,26 +639,25 @@
                   <div class="price-back"></div>
                   <div class="price-image">
                     <img
-                      alt="diagnosticare"
+                      alt="Diagnosticare și reparații hardware"
                       class="image"
                       loading="lazy"
                       src="/assets/images/icons/diagnostic-dark.webp"
                     />
                   </div>
                   <div>
-                    <h2 class="price-title">Reparatii și Upgrade-uri</h2>
+                    <h2 class="price-title">Reparații și Upgrade-uri</h2>
                   </div>
-                  <!-- <div class="price-subtext">de la...</div> -->
-                  <div class="price">100 RON</div>
+                  <div class="price">100-400 RON</div>
                   <ul class="price-list">
-                    <li>Consultanta gratuita</li>
+                    <li>Consultanță gratuită</li>
                     <li>Înlocuire componente</li>
                     <li>Diagnosticare</li>
                   </ul>
                   <a
                     class="btn-md btns-bordered btn text-upper"
                     href="/reparatii-service-laptop-calculator-brasov/"
-                    >detalii</a
+                    >Detalii</a
                   >
                 </div>
               </div>
@@ -503,15 +669,14 @@
                   <div class="price-back"></div>
                   <div class="price-image">
                     <img
-                      alt="mini logo"
+                      alt="Configurare router și rețea WiFi"
                       class="image"
                       loading="lazy"
                       src="/assets/images/icons/headphones-dark.webp"
                     />
                   </div>
                   <div><h2 class="price-title">Configurare Internet</h2></div>
-                  <!-- <div class="price-subtext">de la...</div> -->
-                  <div class="price">200 RON</div>
+                  <div class="price">200-400 RON</div>
                   <ul class="price-list">
                     <li>Configurare Router / Extender</li>
                     <li>Securizare Router</li>
@@ -520,7 +685,7 @@
                   <a
                     class="btn-md btns-bordered btn text-upper"
                     href="/instalare-router-wifi-brasov/"
-                    >detalii</a
+                    >Detalii</a
                   >
                 </div>
               </div>
@@ -532,8 +697,15 @@
             class="btn text-upper"
             data-inview-showup="showup-translate-up"
             href="/service-calculatoare-laptop-brasov-crank-it/"
-            ><i aria-hidden="true" class="fas fa-th-large"></i>  lista completa
-            servicii</a
+            ><i aria-hidden="true" class="fas fa-th-large"></i>  Vezi toate serviciile</a
+          >
+          <a
+            class="btn text-upper"
+            data-inview-showup="showup-translate-up"
+            href="/preturi-servicii-it-brasov/"
+            style="margin-left: 10px"
+            ><i aria-hidden="true" class="fas fa-tags"></i>&nbsp;&nbsp;Prețuri și
+            tarife</a
           >
         </div>
       </div>
@@ -545,7 +717,7 @@
             class="section-title text-upper text-lg"
             data-inview-showup="showup-translate-right"
           >
-            De ce sǎ ne alegi?
+            De ce să ne alegi?
           </h2>
           <p data-inview-showup="showup-translate-left"></p>
         </div>
@@ -564,7 +736,8 @@
                     <div class="feature-title text-upper">Suntem rapizi</div>
                   </div>
                   <div class="feature-text">
-                    Suna acum si te vom programa pana cel tarziu a doua zi!
+                    Sună acum și te programăm cel târziu a doua zi. Majoritatea
+                lucrărilor sunt gata în aceeași zi.
                   </div>
                 </div>
               </div>
@@ -578,11 +751,12 @@
                       <i aria-hidden="true" class="fas fa-dollar-sign"></i>
                     </div>
                     <div class="feature-title text-upper">
-                      Avem prețuri corecte.
+                      Prețuri afișate
                     </div>
                   </div>
                   <div class="feature-text">
-                    Prețuri accesibile pentru toate buzunarele.
+                    Toate prețurile sunt publicate pe site, iar prețul final ți-l
+                confirmăm înainte să începem lucrarea.
                   </div>
                 </div>
               </div>
@@ -600,12 +774,13 @@
                       <i aria-hidden="true" class="far fa-calendar-check"></i>
                     </div>
                     <div class="feature-title text-upper">
-                      Garanția lucrǎrii
+                      Garanția lucrării
                     </div>
                   </div>
                   <div class="feature-text">
-                    Ceva nu merge bine dupa ce ai trecut pe la noi? Hai inapoi
-                    si rezolvam gratis!
+                    3 luni garanție pentru lucrările software și 6 luni pentru
+                reparațiile fizice. Dacă apare ceva, revii și rezolvăm fără
+                costuri.
                   </div>
                 </div>
               </div>
@@ -619,12 +794,12 @@
                       <i aria-hidden="true" class="fas fa-users"></i>
                     </div>
                     <div class="feature-title text-upper">
-                      Personal cu experienta
+                      Diagnosticare gratuită
                     </div>
                   </div>
                   <div class="feature-text">
-                    Nici o lucrare de nerezolvat, nici un client nemultumit de
-                    servicii. Cu asta ne mandrim!
+                    Verificăm echipamentul și îți spunem ce trebuie făcut, fără
+                obligația de a continua. Plătești doar lucrarea acceptată.
                   </div>
                 </div>
               </div>
@@ -646,10 +821,11 @@
             class="section-title text-upper text-lg"
             data-inview-showup="showup-translate-right"
           >
-            Service rapid!
+            Service rapid, în 4 pași
           </h2>
           <p data-inview-showup="showup-translate-left">
-            o metoda simpla sa te ajutam
+            De la primul mesaj până la echipamentul funcțional, fără drumuri
+            inutile
           </p>
         </div>
         <div
@@ -658,28 +834,28 @@
         >
           <div class="step">
             <span class="step-number">1.</span
-            ><span class="step-text">Ne contactezi</span>
+            ><span class="step-text">Ne spui problema</span>
           </div>
           <div class="step-separator">
             <i aria-hidden="true" class="fas fa-angle-double-right"></i>
           </div>
           <div class="step">
             <span class="step-number">2.</span
-            ><span class="step-text">Vedem dispozitivul</span>
+            ><span class="step-text">Verificăm echipamentul</span>
           </div>
           <div class="step-separator">
             <i aria-hidden="true" class="fas fa-angle-double-right"></i>
           </div>
           <div class="step">
             <span class="step-number active">3.</span
-            ><span class="step-text">il rezolvam rapid</span>
+            ><span class="step-text">Reparăm și testăm</span>
           </div>
           <div class="step-separator">
             <i aria-hidden="true" class="fas fa-angle-double-right"></i>
           </div>
           <div class="step">
             <span class="step-number">4.</span
-            ><span class="step-text">ti-l returnam imediat</span>
+            ><span class="step-text">Îl primești înapoi</span>
           </div>
         </div>
       </div>
@@ -693,31 +869,43 @@
           <div class="sm-col-3">
             <div class="counter">
               <div class="counter-title text-upper">
-                1200+ Clienți satisfǎcuți
+                Clienți mulțumiți
               </div>
-              <div class="counter-value" data-waypoint-counter="1204">1204</div>
+              <div class="counter-value">
+                <span data-waypoint-counter="1200">1200</span
+                ><span class="counter-plus">+</span>
+              </div>
             </div>
           </div>
           <div class="sm-col-3">
             <div class="counter">
               <div class="counter-title text-upper">
-                700+ Proiecte terminate
+                Lucrări finalizate
               </div>
-              <div class="counter-value" data-waypoint-counter="784">784</div>
+              <div class="counter-value">
+                <span data-waypoint-counter="750">750</span
+                ><span class="counter-plus">+</span>
+              </div>
             </div>
           </div>
           <div class="sm-col-3">
             <div class="counter">
-              <div class="counter-title text-upper">800+ Sisteme reparate</div>
-              <div class="counter-value" data-waypoint-counter="852">852</div>
+              <div class="counter-title text-upper">Sisteme reparate</div>
+              <div class="counter-value">
+                <span data-waypoint-counter="850">850</span
+                ><span class="counter-plus">+</span>
+              </div>
             </div>
           </div>
           <div class="sm-col-3">
             <div class="counter">
               <div class="counter-title text-upper">
-                1500+ Componente schimbate
+                Componente înlocuite
               </div>
-              <div class="counter-value" data-waypoint-counter="1557">1557</div>
+              <div class="counter-value">
+                <span data-waypoint-counter="1500">1500</span
+                ><span class="counter-plus">+</span>
+              </div>
             </div>
           </div>
         </div>
@@ -739,9 +927,9 @@
             <i aria-hidden="true" class="fas fa-bicycle"></i>
           </div>
           <div class="contact-content">
-            <div class="contact-title">Fǎ o programare acum!</div>
+            <div class="contact-title">Fă o programare acum!</div>
             <div class="text-justify only-xs-text-justify-center">
-              Hai cu dispozitivul tǎu in service.
+              Hai cu dispozitivul tău în service.
             </div>
           </div>
           <div class="contact-btn">
@@ -755,11 +943,14 @@
       </div>
     </section>
     <section class="map-section" data-inview-showup="showup-translate-right">
-      <div
-        class="gmap"
-        data-lat="45.67987364345328"
-        data-lng="25.6068958584699"
-      ></div>
+      <iframe
+        allowfullscreen=""
+        class="iframe"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        src="https://maps.google.com/maps?q=45.67987364345328,25.6068958584699&amp;z=16&amp;hl=ro&amp;output=embed"
+        title="Harta Crank IT – Str. Nicolae Labiș 42, Brașov"
+      ></iframe>
       <div class="info-wrap">
         <div class="info-container">
           <div class="our-info side main-bg">
@@ -771,7 +962,7 @@
                     aria-hidden="true"
                     class="fas fa-map-marker-alt fa-fw"
                   ></i></span
-                >Str. Nicolae Labis 42, Brasov
+                >Str. Nicolae Labiș 42, Brașov
               </div>
               <div class="info-line">
                 <a href="tel:+400773317478">
@@ -796,11 +987,19 @@
                 Luni-Vineri<span class="pull-right">NON STOP</span>
               </div>
               <div class="info-line">
-                Sambata, Duminica<span class="pull-right">NON STOP</span>
+                Sâmbătă, Duminică<span class="pull-right">NON STOP</span>
               </div>
             </div>
           </div>
         </div>
+      </div>
+    </section>
+    <section class="map-cta">
+      <div class="container text-center">
+        <a class="map-btn" href="https://www.google.com/maps/place/Crank+IT+-+Instalare+Windows+Brasov/@45.6524781,25.5964628,12z/data=!3m1!4b1!4m6!3m5!1s0x46d3f34b9c2d890b:0xc6f4975f759ed655!8m2!3d45.6524781!4d25.5964628!16s%2Fg%2F11y47g7mw_?entry=ttu" rel="noopener" target="_blank"
+          ><i aria-hidden="true" class="fas fa-map-marker-alt"></i>Deschide în
+          Google Maps</a
+        >
       </div>
     </section>
 
@@ -863,7 +1062,7 @@
         shape="circle"
         size="large"
       >
-        <img src="assets/images/whatsapp_icon.svg" alt="WhatsApp" />
+        <img src="/assets/images/whatsapp_icon.svg" alt="WhatsApp" />
       </a-button>
 
       <script>
@@ -882,14 +1081,14 @@
             <div class="sm-col-3">
               <div class="footer-logo">
                 <img
-                  alt="Crank IT"
+                  alt="Crank IT Brașov, service laptop și calculatoare"
                   loading="lazy"
                   src="/assets/images/logo.webp"
                 />
               </div>
               <div class="footer-text sm-text-justify">
-                <br />Servicii IT la preturi accesibile. <br />Disponibilitate
-                si in weekend.
+                <br />Servicii IT la prețuri accesibile. <br />Disponibilitate
+                și în weekend.
               </div>
             </div>
             <div class="sm-col-8 sm-push-1">
@@ -908,14 +1107,14 @@
                       <a
                         class="content-link"
                         href="/contact-adresa-si-program-crank-it-brasov/"
-                        >Str. Nicolae Labis 42</a
+                        >Str. Nicolae Labiș 42</a
                       >
                     </li>
                     <li>
                       <a
                         class="content-link"
                         href="/contact-adresa-si-program-crank-it-brasov/"
-                        >Brasov</a
+                        >Brașov</a
                       >
                     </li>
                     <li>
@@ -942,14 +1141,14 @@
                       <a
                         class="content-link"
                         href="/curatare-calculator-laptop-de-praf-brasov/"
-                        >Curatare si Intretinere</a
+                        >Curățare și Întreținere</a
                       >
                     </li>
                     <li>
                       <a
                         class="content-link"
                         href="/reparatii-service-laptop-calculator-brasov/"
-                        >Reparatii si Upgrade-uri</a
+                        >Reparații și Upgrade-uri</a
                       >
                     </li>
                     <li>
@@ -962,36 +1161,14 @@
                   </ul>
                 </div>
                 <div class="sm-col-4">
-                  <div class="footer-title text-upper">Pagini</div>
+                  <div class="footer-title text-upper">Google Maps</div>
                   <div class="cols-list inline-block">
-                    <a
-                      class="list-item"
-                      href="https://www.facebook.com/instalarewindowsbrasov.crankit/"
-                      style="margin-right: 16px"
-                      ><img
-                        alt="facebook-page"
-                        height="30"
-                        loading="lazy"
-                        src="/assets/images/facebook_logo.webp"
-                        width="30"
-                    /></a>
-                    <a
-                      class="list-item"
-                      href="https://www.instagram.com/crank.it.bv/"
-                      style="margin-right: 16px"
-                      ><img
-                        alt="google-maps"
-                        height="30"
-                        loading="lazy"
-                        src="/assets/images/insta_logo.webp"
-                        width="30"
-                    /></a>
                     <a
                       class="list-item"
                       href="https://www.google.com/maps/place/Crank+IT+-+Instalare+Windows+Brasov/@45.6524781,25.5964628,12z/data=!3m1!4b1!4m6!3m5!1s0x46d3f34b9c2d890b:0xc6f4975f759ed655!8m2!3d45.6524781!4d25.5964628!16s%2Fg%2F11y47g7mw_?entry=ttu"
                       style="margin-right: 16px"
                       ><img
-                        alt="google-maps"
+                        alt="Crank IT pe Google Maps"
                         height="27"
                         loading="lazy"
                         src="/assets/images/google_logo.webp"
@@ -1044,10 +1221,47 @@
     <!-- Pentix scripts end -->
     <!-- Inits theme scripts -->
     <script src="/assets/js/script.js" type="text/javascript"></script>
-    <script
-      async=""
-      defer=""
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBToXJuBVmlW0oW-ZUkmFR_eN6s1QRK8tE&amp;callback=initMap"
-    ></script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://crank-it.ro/#business",
+      "name": "Crank IT - Service Laptop Brașov",
+      "image": "https://crank-it.ro/assets/images/logo.webp",
+      "url": "https://crank-it.ro/",
+      "telephone": "+40773317478",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Str. Nicolae Labiș 42",
+        "addressLocality": "Brașov",
+        "postalCode": "500112",
+        "addressCountry": "RO"
+      },
+      "areaServed": {
+        "@type": "AdministrativeArea",
+        "name": "Brașov"
+      },
+      "priceRange": "50-500 RON",
+      "sameAs": [
+        "https://www.google.com/maps/place/Crank+IT+-+Instalare+Windows+Brașov/@45.6524781,25.5964628,12z/data=!3m1!4b1!4m6!3m5!1s0x46d3f34b9c2d890b:0xc6f4975f759ed655!8m2!3d45.6524781!4d25.5964628!16s%2Fg%2F11y47g7mw_?entry=ttu"
+      ],
+      "hasMap": "https://www.google.com/maps/place/Crank+IT+-+Instalare+Windows+Brașov/@45.6524781,25.5964628,12z/data=!3m1!4b1!4m6!3m5!1s0x46d3f34b9c2d890b:0xc6f4975f759ed655!8m2!3d45.6524781!4d25.5964628!16s%2Fg%2F11y47g7mw_?entry=ttu"
+    },
+    {
+      "@type": "WebSite",
+      "url": "https://crank-it.ro/",
+      "name": "Crank IT Brașov",
+      "inLanguage": "ro-RO"
+    }
+  ]
+}
+    </script>
+    <div class="mobile-callbar">
+      <a class="cb-call" href="tel:+40773317478"
+        ><i aria-hidden="true" class="fas fa-phone"></i>Sună acum</a
+      >
+    </div>
   </body>
 </html>

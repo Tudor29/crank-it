@@ -5,6 +5,12 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^([^/]+)/$ /$1.html [L,R=301]
 
+# === REDIRECT EXTENSIONLESS to .html ===
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^([^/.]+)$ /$1.html [L,R=301]
+
 # === PREVENT ACCESS TO .htaccess ===
 <Files .htaccess>
 Order allow,deny
